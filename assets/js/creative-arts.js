@@ -32,64 +32,61 @@ document.addEventListener('DOMContentLoaded', () => {
                         top: targetElement.offsetTop - navbarHeight,
                         behavior: 'smooth'
                     });
-
-                    // Close navbar on mobile after clicking a link
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                            toggle: false
-                        });
-                        bsCollapse.hide();
-                    }
                 }
             }
-            // If it's an external page link (e.g., index.html, ministries.html), let default behavior happen
         });
     });
 
-    // Handle Ministry Join Form Submission (Modal)
-    const creativeArtsJoinForm = document.getElementById('creativeArtsJoinForm');
-    if (creativeArtsJoinForm) {
-        creativeArtsJoinForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+    // Initialize Bootstrap components and form handling
+    if (typeof bootstrap !== 'undefined') {
+        const joinForm = document.getElementById('creativeMinistryJoinForm');
+        const modalConfirmationMessage = document.getElementById('modalConfirmationMessage');
+        
+        if (joinForm) {
+            joinForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (this.checkValidity()) {
+                    // Simulate form submission to a server
+                    console.log('Creative Arts Ministry Join Request Submitted:', {
+                        name: document.getElementById('joinName').value,
+                        email: document.getElementById('joinEmail').value,
+                        interest: document.getElementById('joinInterest').value,
+                        message: document.getElementById('joinMessage').value
+                    });
 
-            // Validate form fields
-            if (!this.checkValidity()) {
-                event.stopPropagation(); // Stop propagation if validation fails
-                this.classList.add('was-validated'); // Add Bootstrap's validation styles
-                return;
-            }
+                    // Hide the form and show the confirmation message
+                    this.style.display = 'none'; // Hide the form
+                    if (modalConfirmationMessage) {
+                        modalConfirmationMessage.classList.remove('d-none'); // Show confirmation
+                    }
 
-            // Get form data
-            const formData = {
-                name: document.getElementById('joinName').value,
-                email: document.getElementById('joinEmail').value,
-                interest: document.getElementById('joinInterest').value,
-                message: document.getElementById('joinMessage').value
-            };
-
-            // Simulate form submission (e.g., to a server or a Google Sheet)
-            console.log('Creative Arts Ministry Join Request Submitted:', formData);
-
-            // Hide the form and show the confirmation message
-            this.classList.add('d-none'); // Hide the form
-            document.getElementById('modalConfirmationMessage').classList.remove('d-none'); // Show confirmation
-
-            // Optional: Close modal after a few seconds or allow user to close manually
-            // setTimeout(() => {
-            //     const modalElement = document.getElementById('joinMinistryModal');
-            //     const modal = bootstrap.Modal.getInstance(modalElement);
-            //     if (modal) modal.hide();
-            // }, 3000); // Close after 3 seconds
-        });
-
+                    // Optional: Close modal after a few seconds or allow user to close manually
+                    // setTimeout(() => {
+                    //     const modalElement = document.getElementById('joinMinistryModal');
+                    //     const modal = bootstrap.Modal.getInstance(modalElement);
+                    //     if (modal) modal.hide();
+                    // }, 3000); // Close after 3 seconds
+                } else {
+                    this.classList.add('was-validated');
+                }
+            });
+        }
+        
         // Reset form and message when modal is hidden
         const joinMinistryModal = document.getElementById('joinMinistryModal');
-        joinMinistryModal.addEventListener('hidden.bs.modal', function () {
-            creativeArtsJoinForm.reset(); // Reset form fields
-            creativeArtsJoinForm.classList.remove('was-validated'); // Remove validation styles
-            creativeArtsJoinForm.classList.remove('d-none'); // Show the form again
-            document.getElementById('modalConfirmationMessage').classList.add('d-none'); // Hide confirmation
-        });
+        if (joinMinistryModal) {
+            joinMinistryModal.addEventListener('hidden.bs.modal', function () {
+                if (joinForm) {
+                    joinForm.reset(); // Reset form fields
+                    joinForm.classList.remove('was-validated'); // Remove validation styles
+                    joinForm.style.display = 'block'; // Show the form again
+                }
+                if (modalConfirmationMessage) {
+                    modalConfirmationMessage.classList.add('d-none'); // Hide confirmation
+                }
+            });
+        }
+    } else {
+        console.warn('Bootstrap library not loaded. Modals and form validation may not function.');
     }
 });

@@ -373,7 +373,7 @@ p {
 }
 
 .prayer-section .section-title {
-    color: #fff;
+    color: #04003d;
 }
 
 .prayer-section .section-title::after {
@@ -393,7 +393,7 @@ p {
 }
 
 .prayer-section .form-label {
-    color: #fff;
+    color: #04003d;
     font-weight: 600;
 }
 
@@ -417,7 +417,7 @@ p {
 }
 
 .prayer-section .form-text {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: #04003d !important;
 }
 
 .prayer-section .invalid-feedback {
@@ -432,7 +432,7 @@ p {
 }
 
 .testimonials-section .section-title {
-    color: #04003d;
+    color: #e68a00;
 }
 
 .testimonials-section .section-title::after {
@@ -445,7 +445,7 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     backdrop-filter: blur(5px);
-    color: #04003d;
+    color: #30d5c8;
     font-size: 1.1rem;
     line-height: 1.8;
 }

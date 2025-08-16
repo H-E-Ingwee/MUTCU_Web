@@ -1,6 +1,6 @@
-/* Technical Ministry Specific Styles */
+/* Prayer Ministry Specific Styles */
 :root {
-    --technical-accent: #30d5c8; /* Teal for innovation and tech */
+    --prayer-accent: #30d5c8; /* Teal for prayer theme */
     --mutcu-navy-blue: #04003d;
     --mutcu-orange: #ff9700;
     --mutcu-red: #ff1229;
@@ -29,7 +29,7 @@ p {
 }
 
 .text-primary-light {
-    color: var(--technical-accent) !important;
+    color: var(--prayer-accent) !important;
 }
 
 .bg-primary-dark {
@@ -130,7 +130,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(48, 213, 200, 0.3)); /* Using teal accent */
+    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(48, 213, 200, 0.3));
     z-index: 1;
 }
 
@@ -168,7 +168,7 @@ p {
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
-    background-color: var(--technical-accent);
+    background-color: var(--prayer-accent);
     border-radius: 2px;
 }
 
@@ -209,10 +209,6 @@ p {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; /* Ensure uniform height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .sub-ministry-card:hover {
@@ -220,38 +216,27 @@ p {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.sub-ministry-card .card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
 .sub-ministry-card .card-title {
     font-size: 1.8rem;
     color: var(--mutcu-navy-blue);
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
 .sub-ministry-card p {
     font-size: 0.95rem;
     color: #555;
-    margin-bottom: 15px;
-    flex-grow: 1;
 }
 
 .sub-ministry-card h6 {
-    color: var(--technical-accent);
+    color: var(--prayer-accent);
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .sub-ministry-card ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 15px;
 }
 
 .sub-ministry-card ul li {
@@ -260,14 +245,13 @@ p {
     font-size: 0.9rem;
     position: relative;
     padding-left: 25px;
-    line-height: 1.4;
 }
 
 .sub-ministry-card ul li::before {
     content: '\f00c';
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: var(--technical-accent);
+    color: var(--prayer-accent);
     position: absolute;
     left: 0;
     top: 2px;
@@ -275,24 +259,17 @@ p {
 
 .sub-ministry-card .text-muted {
     font-size: 0.85rem;
-    margin-top: auto; /* Push to bottom */
-    padding-top: 10px;
-    border-top: 1px solid #eee;
 }
 
-.sub-ministry-card i {
-    margin-bottom: 15px;
-}
-
-/* Custom Icons for Teams */
+/* Custom Icons for Prayer Gatherings */
 .choir-icon { color: var(--mutcu-red); font-size: 3rem; }
-.band-icon { color: var(--mutcu-teal); font-size: 3rem; }
+.band-icon { color: var(--prayer-accent); font-size: 3rem; }
 .praise-icon { color: var(--mutcu-orange); font-size: 3rem; }
 .instrumentalists-icon { color: var(--mutcu-navy-blue); font-size: 3rem; }
 
 /* Key Events */
 .key-events-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--prayer-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -316,23 +293,12 @@ p {
     backdrop-filter: blur(5px);
     transition: all 0.3s ease;
     color: #fff;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .event-highlight-card:hover {
     background-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
-}
-
-.event-highlight-card .card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
 }
 
 .event-highlight-card .event-icon {
@@ -345,30 +311,24 @@ p {
     color: var(--mutcu-orange);
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .event-highlight-card p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.95rem;
-    margin-bottom: 15px;
-    flex-grow: 1;
 }
 
 .event-highlight-card .text-muted {
     color: rgba(255, 255, 255, 0.7) !important;
-    margin-top: auto;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .event-highlight-card .text-muted i {
-    color: var(--technical-accent);
+    color: var(--prayer-accent);
 }
 
 /* Leadership Spotlight */
 .leadership-spotlight-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--prayer-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -443,7 +403,7 @@ p {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--prayer-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -462,7 +422,7 @@ p {
 
 form .form-control {
     border-radius: 0;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--prayer-accent);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -483,7 +443,7 @@ form .form-label {
 form .form-select {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--prayer-accent);
 }
 
 form .form-select:focus {
@@ -564,7 +524,6 @@ form .form-select:focus {
     .page-hero-section h1 { font-size: 3rem; }
     .page-hero-section p.lead { font-size: 1.3rem; }
     .section-title { font-size: 2.5rem; }
-    .sub-ministry-card .card-title { font-size: 1.6rem; }
 }
 
 @media (max-width: 991.98px) {
@@ -576,7 +535,6 @@ form .form-select:focus {
     .ministry-intro-section .section-title { text-align: center; }
     .ministry-intro-section .section-title::after { left: 50%; transform: translateX(-50%); }
     .ministry-intro-section img { margin-top: 20px; }
-    .sub-ministry-card { margin-bottom: 20px; }
 }
 
 @media (max-width: 767.98px) {
@@ -585,11 +543,10 @@ form .form-select:focus {
     .page-hero-section p.lead { font-size: 1rem; }
     .btn-primary, .btn-secondary { padding: 10px 20px; font-size: 0.9rem; }
     .section-title { font-size: 1.8rem; }
-    .sub-ministry-card .card-title { font-size: 1.4rem; }
+    .sub-ministry-card .card-title { font-size: 1.5rem; }
     .sub-ministry-card .choir-icon, .band-icon, .praise-icon, .instrumentalists-icon { font-size: 2.5rem; }
     .event-highlight-card .event-icon { font-size: 2.5rem; }
     .executive-member-card img { width: 80px; height: 80px; }
-    .sub-ministry-card .card-body { padding: 15px; }
 }
 
 @media (max-width: 575.98px) {
@@ -601,5 +558,4 @@ form .form-select:focus {
     .section-title { font-size: 1.5rem; }
     .sub-ministry-card ul li { font-size: 0.85rem; }
     .executive-member-card img { width: 70px; height: 70px; }
-    .sub-ministry-card .card-title { font-size: 1.2rem; }
 }

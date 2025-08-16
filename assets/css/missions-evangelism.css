@@ -1,6 +1,6 @@
-/* Technical Ministry Specific Styles */
+/* Missions & Evangelism Ministry Specific Styles */
 :root {
-    --technical-accent: #30d5c8; /* Teal for innovation and tech */
+    --missions-accent: #ff9700; /* Orange for energy and outreach */
     --mutcu-navy-blue: #04003d;
     --mutcu-orange: #ff9700;
     --mutcu-red: #ff1229;
@@ -29,7 +29,7 @@ p {
 }
 
 .text-primary-light {
-    color: var(--technical-accent) !important;
+    color: var(--missions-accent) !important;
 }
 
 .bg-primary-dark {
@@ -130,7 +130,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(48, 213, 200, 0.3)); /* Using teal accent */
+    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(255, 151, 0, 0.3)); /* Using orange accent */
     z-index: 1;
 }
 
@@ -168,7 +168,7 @@ p {
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
-    background-color: var(--technical-accent);
+    background-color: var(--missions-accent);
     border-radius: 2px;
 }
 
@@ -242,7 +242,7 @@ p {
 }
 
 .sub-ministry-card h6 {
-    color: var(--technical-accent);
+    color: var(--missions-accent);
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -267,7 +267,7 @@ p {
     content: '\f00c';
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: var(--technical-accent);
+    color: var(--missions-accent);
     position: absolute;
     left: 0;
     top: 2px;
@@ -284,7 +284,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* Custom Icons for Teams */
+/* Custom Icons for Programs */
 .choir-icon { color: var(--mutcu-red); font-size: 3rem; }
 .band-icon { color: var(--mutcu-teal); font-size: 3rem; }
 .praise-icon { color: var(--mutcu-orange); font-size: 3rem; }
@@ -292,7 +292,7 @@ p {
 
 /* Key Events */
 .key-events-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--missions-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -363,12 +363,12 @@ p {
 }
 
 .event-highlight-card .text-muted i {
-    color: var(--technical-accent);
+    color: var(--missions-accent);
 }
 
 /* Leadership Spotlight */
 .leadership-spotlight-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--missions-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -443,7 +443,7 @@ p {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--missions-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -462,7 +462,7 @@ p {
 
 form .form-control {
     border-radius: 0;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--missions-accent);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -483,7 +483,7 @@ form .form-label {
 form .form-select {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--missions-accent);
 }
 
 form .form-select:focus {

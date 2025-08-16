@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Form submission
-    const form = document.getElementById('join-technical-form');
+    const form = document.getElementById('join-hospitality-form');
     const successMessage = document.getElementById('success-message');
 
     form.addEventListener('submit', function(e) {

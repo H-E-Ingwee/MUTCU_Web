@@ -3,147 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUTCU Technical Ministry - Enabling the Vision</title>
-    <!-- Google Fonts: Montserrat for headings, Lato for body text -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MUTCU Technical Ministry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/technical-ministry.css">
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- AOS for Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS for this specific ministry page -->
-    <link rel="stylesheet" href="../../assets/css/technical-ministry.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar (Consistent with Homepage) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main navigation">
+    <!-- Navbar (Consistent with other pages) -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../../assets/images/icon.png" alt="MUTCU Logo" height="60">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="MUTCU Logo"> <!-- Placeholder for logo -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../ministries.html" aria-current="page">Ministries</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../resources.html">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ministries.html">Ministries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Hero Section -->
-    <section class="page-hero-section d-flex align-items-center text-center text-white" style="background-image: url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <!-- Ministry Hero Section -->
+    <section class="page-hero-section" style="background-image: url('technical-hero.jpg');" data-aos="fade-in">
         <div class="hero-overlay"></div>
-        <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="display-3 mb-3">MUTCU Technical Ministry</h1>
-            <p class="lead">Serving the Kingdom Through Sound, Media & Technology</p>
+        <div class="container">
+            <h1 data-aos="fade-up">MUTCU Technical Ministry</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Supporting Worship Through Technology and Service</p>
         </div>
     </section>
 
-    <!-- Ministry Introduction Section -->
-    <section class="py-5 ministry-intro-section">
+    <!-- Ministry Intro Section -->
+    <section class="ministry-intro-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
-                    <h2 class="section-title text-start">About the Technical Ministry</h2>
-                    <p class="lead">The Technical Ministry is the backbone of all MUTCU events, ensuring that the message of the gospel is heard and seen clearly. Our dedicated team of technicians and media specialists handles all aspects of sound, lighting, projection, and live streaming for weekly services and special events. We are committed to using technology as a powerful tool for ministry, creating an environment where every member can worship without distraction and every word is delivered with clarity and impact. Our service is behind the scenes but essential to the Union's mission.</p>
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <img src="joseph-mbogo.jpg" alt="Joseph Mbogo" class="img-fluid rounded-circle" data-aos="zoom-in">
+                    <h3 class="mt-3">Joseph Mbogo</h3>
+                    <p class="text-muted">Technical Coordinator</p>
                 </div>
-                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
-                    <img src="https://images.pexels.com/photos/1010537/pexels-photo-1010537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Technical Ministry at work" class="img-fluid rounded-3 shadow-lg">
+                <div class="col-lg-7">
+                    <h2 class="section-title" data-aos="fade-right">About the Technical Ministry</h2>
+                    <p data-aos="fade-right" data-aos-delay="100">The Technical Ministry is responsible for all technical aspects of MUTCU's activities, ensuring smooth operations during services, events, and online engagements. As per the constitution, it encompasses the ICT Ministry, Publicity Ministry, and Ushering Ministry.</p>
+                    <p data-aos="fade-right" data-aos-delay="200">From the policy framework, the ministry includes Sound Ministry, Ushering Ministry, MBBC (Media Broadcasting and Broadcast Committee), and Digital Ministry. The overview highlights asset management and support for worship experiences.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sub-Ministries Section -->
-    <section class="py-5 bg-light creative-ensembles-section">
+    <section class="sub-ministries-section">
         <div class="container">
-            <h2 class="section-title text-center">Our Areas of Service</h2>
-            <p class="text-center lead mb-5">Our ministry is made up of different teams working together to deliver excellence.</p>
-
-            <div class="row justify-content-center">
-                <!-- Sound Ministry Card -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="creative-card p-4 rounded-3 shadow-sm h-100 text-center">
-                        <i class="fas fa-volume-up sound-icon mb-3"></i>
-                        <h3 class="card-title mb-2">Sound Ministry</h3>
-                        <p class="card-text">Responsible for all audio aspects, from mixing to microphone setup, ensuring every word of worship is heard with clarity.</p>
-                    </div>
-                </div>
-
-                <!-- MBBC Ministry Card -->
+            <h2 class="section-title text-center" data-aos="fade-up">Our Technical Teams</h2>
+            <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">The ministry comprises several specialized teams. Click on the cards to learn more!</p>
+            <div class="row">
                 <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="creative-card p-4 rounded-3 shadow-sm h-100 text-center">
-                        <i class="fas fa-video mbbc-icon mb-3"></i>
-                        <h3 class="card-title mb-2">MBBC Ministry</h3>
-                        <p class="card-text">Manages all media, broadcasting, and camera operations to capture and project the gospel message visually.</p>
-                    </div>
-                </div>
-            
-                <!-- Digital Ministry Card -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="creative-card p-4 rounded-3 shadow-sm h-100 text-center">
-                        <i class="fas fa-laptop-code digital-icon mb-3"></i>
-                        <h3 class="card-title mb-2">Digital Ministry</h3>
-                        <p class="card-text">Handles the online presence, website management, and digital content creation to reach a broader audience.</p>
-                    </div>
-                </div>
-
-                <!-- Ushering Ministry Card -->
-                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="creative-card p-4 rounded-3 shadow-sm h-100 text-center">
-                        <i class="fas fa-hands-helping ushering-icon mb-3"></i>
-                        <h3 class="card-title mb-2">Ushering Ministry</h3>
-                        <p class="card-text">Ensures a warm, welcoming, and orderly environment for all members and visitors during services and events.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Operational Policies Section (New) -->
-    <section class="py-5 operational-policies-section">
-        <div class="container">
-            <h2 class="section-title text-center">Operational Policies</h2>
-            <p class="text-center lead mb-5">Our ministry is guided by MUTCU's official policies to ensure good stewardship and professionalism.</p>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="card shadow-lg border-0 rounded-3">
-                        <div class="card-body p-4 p-md-5">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-start mb-3">
-                                    <i class="fas fa-file-invoice-dollar fa-2x text-primary-light me-4"></i>
-                                    <div>
-                                        <h5 class="fw-bold text-navy-blue">Financial Accountability</h5>
-                                        <p class="text-muted mb-0">In line with MUTCU policies, all technical dockets are required to submit detailed budgets and use official requisition forms for all expenditures. This ensures proper stewardship of the Union's resources.</p>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="d-flex align-items-start mb-3">
-                                    <i class="fas fa-tools fa-2x text-primary-light me-4"></i>
-                                    <div>
-                                        <h5 class="fw-bold text-navy-blue">Asset Management & Maintenance</h5>
-                                        <p class="text-muted mb-0">The ministry adheres to strict policies for the use, borrowing, and maintenance of all our assets, including sound equipment, cameras, and computers. This responsible management ensures the longevity and availability of resources for ministry.</p>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="d-flex align-items-start">
-                                    <i class="fas fa-user-friends fa-2x text-primary-light me-4"></i>
-                                    <div>
-                                        <h5 class="fw-bold text-navy-blue">Leadership & Transition</h5>
-                                        <p class="text-muted mb-0">New leaders for the Technical Docket are appointed annually through a formal nomination process, ensuring a smooth and prayerfully guided transition of responsibilities.</p>
-                                    </div>
-                                </li>
+                    <div class="sub-ministry-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-volume-up choir-icon mb-3"></i>
+                            <h4 class="card-title">Sound Ministry</h4>
+                            <p class="card-text">Manages audio equipment and sound quality for all events.</p>
+                            <h6>Activities</h6>
+                            <ul>
+                                <li>Sound system setup and operation</li>
+                                <li>Equipment maintenance and borrowing policies</li>
+                                <li>Training new members</li>
                             </ul>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>Meets weekly for training</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="sub-ministry-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-friends band-icon mb-3"></i>
+                            <h4 class="card-title">Ushering Ministry</h4>
+                            <p class="card-text">Welcomes attendees and maintains order during gatherings.</p>
+                            <h6>Activities</h6>
+                            <ul>
+                                <li>Greeting and seating members</li>
+                                <li>Distributing materials</li>
+                                <li>Ensuring safety protocols</li>
+                            </ul>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>Meets before major events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="sub-ministry-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-broadcast-tower praise-icon mb-3"></i>
+                            <h4 class="card-title">MBBC Ministry</h4>
+                            <p class="card-text">Handles media broadcasting and content creation.</p>
+                            <h6>Activities</h6>
+                            <ul>
+                                <li>Photography and videography</li>
+                                <li>Live streaming</li>
+                                <li>Content editing</li>
+                            </ul>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>Active during all events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="sub-ministry-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe instrumentalists-icon mb-3"></i>
+                            <h4 class="card-title">Digital Ministry</h4>
+                            <p class="card-text">Manages online presence and digital tools.</p>
+                            <h6>Activities</h6>
+                            <ul>
+                                <li>Website maintenance</li>
+                                <li>Social media management</li>
+                                <li>Digital publicity</li>
+                            </ul>
+                            <p class="text-muted"><i class="fas fa-clock me-2"></i>Ongoing, weekly updates</p>
                         </div>
                     </div>
                 </div>
@@ -152,33 +141,19 @@
     </section>
 
     <!-- Key Events Section -->
-    <section class="py-5 key-events-section text-white">
+    <section class="key-events-section">
         <div class="container">
-            <h2 class="section-title text-center text-white">Featured Events</h2>
-            <p class="text-center lead mb-5 text-white-50">Our ministry's dedication is on full display during these key events.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-right" data-aos-delay="100">
-                    <div class="event-highlight-card p-4 rounded-3 shadow-sm h-100">
-                        <i class="fas fa-tools event-icon mb-3"></i>
-                        <h4 class="card-title">Technical Weekend</h4>
-                        <p>A dedicated weekend for hands-on training, equipment maintenance, and team building for all sub-ministries.</p>
-                        <p class="mb-0 text-muted"><i class="fas fa-calendar-alt me-2"></i> **Next Date:** 17th October</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="event-highlight-card p-4 rounded-3 shadow-sm h-100">
-                        <i class="fas fa-camera event-icon mb-3"></i>
-                        <h4 class="card-title">Media & Broadcast Workshop</h4>
-                        <p>A workshop focused on advanced camera techniques, live streaming software, and media presentation skills for the MBBC and Digital teams.</p>
-                        <p class="mb-0 text-muted"><i class="fas fa-calendar-alt me-2"></i> **Happens Bi-Annually**</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-left" data-aos-delay="300">
-                    <div class="event-highlight-card p-4 rounded-3 shadow-sm h-100">
-                        <i class="fas fa-walking event-icon mb-3"></i>
-                        <h4 class="card-title">Ushering & Protocol Training</h4>
-                        <p>A crucial session for the Ushering Ministry on hospitality, crowd management, and creating a welcoming and safe environment.</p>
-                        <p class="mb-0 text-muted"><i class="fas fa-calendar-alt me-2"></i> **Happens Every Semester**</p>
+            <h2 class="section-title text-center" data-aos="fade-up">Featured Events</h2>
+            <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">Participate in our technical-focused events.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="event-highlight-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools event-icon"></i>
+                            <h5 class="card-title">Technical Weekend</h5>
+                            <p class="card-text">A weekend dedicated to technical training and maintenance.</p>
+                            <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i>17th October</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,107 +161,115 @@
     </section>
 
     <!-- Leadership Spotlight Section -->
-    <section class="py-5 leadership-spotlight-section text-white">
-        <div class="container text-center" data-aos="zoom-in">
-            <h2 class="section-title text-white">Ministry Leadership</h2>
-            <p class="lead mb-4 text-white-50">Guided by dedicated leadership, our docket thrives.</p>
+    <section class="leadership-spotlight-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Ministry Leadership</h2>
+            <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">Guided by dedicated leadership, our Technical Ministry thrives.</p>
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <a href="../committees/technical.html" class="executive-member-card d-block text-center text-decoration-none rounded-3 shadow-sm h-100 p-4">
-                        <img src="https://placehold.co/200x200/ff9700/ffffff?text=Technical+Leader" alt="Technical Ministry Leader" class="img-fluid rounded-circle mb-3 border border-3 border-navy">
-                        <h4 class="member-name">Technical Docket Head</h4>
-                        <p class="member-role">Coordinator, Technical Ministry</p>
-                        <span class="btn btn-sm btn-outline-light mt-2">View Profile <i class="fas fa-user-circle ms-2"></i></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section with Join Form Trigger -->
-    <section class="py-5 cta-section text-white">
-        <div class="container text-center" data-aos="zoom-in">
-            <h2 class="section-title text-white">Join the Technical Ministry!</h2>
-            <p class="lead mb-4 text-white-50">If you have a passion for technology and want to use your skills to serve, we invite you to join our team. Click below to express your interest!</p>
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#joinMinistryModal">
-                Join This Ministry <i class="fas fa-network-wired ms-2"></i>
-            </button>
-        </div>
-    </section>
-
-    <!-- Join Ministry Modal -->
-    <div class="modal fade" id="joinMinistryModal" tabindex="-1" aria-labelledby="joinMinistryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-primary-dark text-white">
-                    <h5 class="modal-title" id="joinMinistryModalLabel">Join Technical Ministry</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center mb-4">Fill out the form below to express your interest in joining the Technical Ministry. We'll get in touch with you shortly!</p>
-                    <form id="technicalMinistryJoinForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="joinName" class="form-label">Your Full Name</label>
-                            <input type="text" class="form-control" id="joinName" required placeholder="Jane Doe">
-                            <div class="invalid-feedback">
-                                Please enter your full name.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="joinEmail" class="form-label">Your University Email</label>
-                            <input type="email" class="form-control" id="joinEmail" required placeholder="janedoe@mut.ac.ke">
-                            <div class="invalid-feedback">
-                                Please enter a valid university email address.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="joinInterest" class="form-label">Area of Interest</label>
-                            <select class="form-select" id="joinInterest" required>
-                                <option value="" disabled selected>Select an area</option>
-                                <option value="sound">Sound Ministry</option>
-                                <option value="mbbc">MBBC Ministry</option>
-                                <option value="digital">Digital Ministry</option>
-                                <option value="ushering">Ushering Ministry</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please select your primary area of interest.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="joinMessage" class="form-label">Tell us about your technical skills or passion (Optional)</label>
-                            <textarea class="form-control" id="joinMessage" rows="3" placeholder="e.g., I have experience with sound mixing and OBS software..."></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Submit Interest</button>
-                        </div>
-                    </form>
-                    <div id="modalConfirmationMessage" class="mt-4 text-center d-none">
-                        <i class="fas fa-check-circle fa-4x text-teal mb-3 animate-pop-in"></i>
-                        <p class="lead">Thank you for your interest in the Technical Ministry! We've received your submission and will get in touch with you soon.</p>
+                <div class="col-md-4 col-lg-3 mb-4" data-aos="zoom-in">
+                    <div class="executive-member-card">
+                        <img src="joseph-mbogo.jpg" alt="Joseph Mbogo" class="img-fluid rounded-circle mb-2 border-orange">
+                        <h5 class="member-name">Joseph Mbogo</h5>
+                        <p class="member-role">Technical Coordinator</p>
+                        <a href="#" class="btn btn-outline-light btn-sm">View Profile</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Footer (Consistent with Homepage) -->
-    <footer class="footer py-5">
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Join Our Technical Ministry!</h2>
+            <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">If you have a passion for technology and service, we invite you to join. Fill out the form below to express your interest!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
+                    <form id="join-technical-form">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Your Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Please enter your full name." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Please enter a valid university email address." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="areaOfInterest" class="form-label">Area of Interest</label>
+                            <select class="form-select" id="areaOfInterest" required>
+                                <option selected disabled>Select an area</option>
+                                <option>Sound Ministry</option>
+                                <option>Ushering Ministry</option>
+                                <option>MBBC Ministry</option>
+                                <option>Digital Ministry</option>
+                                <option>General Interest</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="experience" class="form-label">Tell us about your experience or passion (Optional)</label>
+                            <textarea class="form-control" id="experience" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Interest</button>
+                    </form>
+                    <div id="success-message" class="mt-3 text-success animate-pop-in" style="display: none;">
+                        Thank you for your interest in the Technical Ministry! We've received your submission and will get in touch with you soon.
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <a href="join-team.html" class="btn btn-primary">Join a Team</a>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <a href="events.html#technical-events" class="btn btn-secondary">View Technical Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="sub-ministries-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Ministry in Action</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="zoom-in">
+                    <img src="sound-setup.jpg" alt="Sound Setup" class="img-fluid rounded">
+                    <p class="text-center mt-2">Sound Ministry Setup</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="ushering.jpg" alt="Ushering" class="img-fluid rounded">
+                    <p class="text-center mt-2">Ushering Team</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="mbbc-broadcast.jpg" alt="MBBC Broadcast" class="img-fluid rounded">
+                    <p class="text-center mt-2">MBBC Live Broadcast</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="digital-social.jpg" alt="Digital Social" class="img-fluid rounded">
+                    <p class="text-center mt-2">Digital Ministry Post</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="footer bg-primary-dark text-white py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5 class="footer-title">About MUTCU</h5>
-                    <p class="footer-text">Murang’a University of Technology Christian Union is a non-denominational community dedicated to inspiring love, hope, and godliness through faith, unity, and service.</p>
+                    <p>Murang’a University of Technology Christian Union is a non-denominational community dedicated to inspiring love, hope, and godliness through faith, unity, and service.</p>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../ministries.html">Ministries</a></li>
-                        <li><a href="../events.html">Events</a></li>
-                        <li><a href="../resources.html">Resources</a></li>
-                        <li><a href="../gallery.html">Gallery</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="ministries.html" class="text-white">Ministries</a></li>
+                        <li><a href="events.html" class="text-white">Events</a></li>
+                        <li><a href="resources.html" class="text-white">Resources</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -296,24 +279,25 @@
                     <p class="footer-contact"><i class="fas fa-envelope me-2"></i> info@mutcu.ac.ke</p>
                     <p class="footer-contact"><i class="fas fa-clock me-2"></i> Office Hours: Mon-Fri, 8:00 AM - 5:00 PM</p>
                     <div class="social-icons mt-3">
-                        <a href="#" class="me-3" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#" class="me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 border-top pt-4">
-                <p class="footer-text mb-1">&copy; 2025 Murang’a University of Technology Christian Union. All rights reserved.</p>
-                <p class="footer-text">Designed  by MUTCU Tech Team</p>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Murang’a University of Technology Christian Union. All rights reserved.<br>Designed by MUTCU Tech Team</p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS for this specific ministry page -->
-    <script src="../../assets/js/technical-ministry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/technical-ministry.js"></script>
 </body>
 </html>

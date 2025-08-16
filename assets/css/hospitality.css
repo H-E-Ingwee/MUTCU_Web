@@ -1,6 +1,6 @@
-/* Technical Ministry Specific Styles */
+/* Hospitality Ministry Specific Styles */
 :root {
-    --technical-accent: #30d5c8; /* Teal for innovation and tech */
+    --hospitality-accent: #ff9700; /* Orange for warmth and hospitality */
     --mutcu-navy-blue: #04003d;
     --mutcu-orange: #ff9700;
     --mutcu-red: #ff1229;
@@ -29,7 +29,7 @@ p {
 }
 
 .text-primary-light {
-    color: var(--technical-accent) !important;
+    color: var(--hospitality-accent) !important;
 }
 
 .bg-primary-dark {
@@ -130,7 +130,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(48, 213, 200, 0.3)); /* Using teal accent */
+    background: linear-gradient(rgba(4, 0, 61, 0.75), rgba(255, 151, 0, 0.3)); /* Using orange accent */
     z-index: 1;
 }
 
@@ -168,7 +168,7 @@ p {
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
-    background-color: var(--technical-accent);
+    background-color: var(--hospitality-accent);
     border-radius: 2px;
 }
 
@@ -242,7 +242,7 @@ p {
 }
 
 .sub-ministry-card h6 {
-    color: var(--technical-accent);
+    color: var(--hospitality-accent);
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -267,7 +267,7 @@ p {
     content: '\f00c';
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: var(--technical-accent);
+    color: var(--hospitality-accent);
     position: absolute;
     left: 0;
     top: 2px;
@@ -288,11 +288,10 @@ p {
 .choir-icon { color: var(--mutcu-red); font-size: 3rem; }
 .band-icon { color: var(--mutcu-teal); font-size: 3rem; }
 .praise-icon { color: var(--mutcu-orange); font-size: 3rem; }
-.instrumentalists-icon { color: var(--mutcu-navy-blue); font-size: 3rem; }
 
 /* Key Events */
 .key-events-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--hospitality-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -363,12 +362,12 @@ p {
 }
 
 .event-highlight-card .text-muted i {
-    color: var(--technical-accent);
+    color: var(--hospitality-accent);
 }
 
 /* Leadership Spotlight */
 .leadership-spotlight-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--hospitality-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -443,7 +442,7 @@ p {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--technical-accent));
+    background: linear-gradient(to right, var(--mutcu-navy-blue), var(--hospitality-accent));
     padding: 80px 0;
     color: #fff;
 }
@@ -462,7 +461,7 @@ p {
 
 form .form-control {
     border-radius: 0;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--hospitality-accent);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -483,7 +482,7 @@ form .form-label {
 form .form-select {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border-bottom: 2px solid var(--technical-accent);
+    border-bottom: 2px solid var(--hospitality-accent);
 }
 
 form .form-select:focus {
@@ -586,7 +585,7 @@ form .form-select:focus {
     .btn-primary, .btn-secondary { padding: 10px 20px; font-size: 0.9rem; }
     .section-title { font-size: 1.8rem; }
     .sub-ministry-card .card-title { font-size: 1.4rem; }
-    .sub-ministry-card .choir-icon, .band-icon, .praise-icon, .instrumentalists-icon { font-size: 2.5rem; }
+    .sub-ministry-card .choir-icon, .band-icon, .praise-icon { font-size: 2.5rem; }
     .event-highlight-card .event-icon { font-size: 2.5rem; }
     .executive-member-card img { width: 80px; height: 80px; }
     .sub-ministry-card .card-body { padding: 15px; }
